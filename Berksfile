@@ -16,5 +16,5 @@ group :vagrant do
   cookbook 'java'
   cookbook 'netstat'
   cookbook 'ohai'
-  cookbook 'nginx', '>= 7.0'
+  cookbook 'chef_nginx'
 end

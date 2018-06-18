@@ -2,7 +2,7 @@
 
 apt_update 'update apt' if node['platform_family'] == 'debian'
 
-include_recipe 'nginx'
+include_recipe 'chef_nginx'
 
 template File.join(node['nginx']['dir'], 'sites-available', 'kibana') do
   source node['kibana']['nginx']['source']
